@@ -1,0 +1,16 @@
+Resources:
+  EC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: "ami-00569fd08b18bfec5"
+      SubnetId: "subnet-0e897ae7c1e17fc10" 
+      InstanceType: "t2.micro"
+      AvailabilityZone: "us-east-1b"
+      KeyName: 'G3test'
+      SecurityGroupIds:
+        - sg-05d821b9ac77765e8 # replace with your security 
+      Tags: 
+        - Key: "name"
+          Value: "Guillaume"
+        - Key: "name"
+          Value: "MyEc2instance"
